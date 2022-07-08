@@ -37,10 +37,12 @@ if(!is_numeric($age)) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <!-- Se dopo i controlli accessGranted è rimasta true, stampo "Accesso riuscito" -->
     <?php if($accessGranted) { ?>
         <div class="alert alert-success" role="alert">
             Accesso riuscito
         </div>
+    <!-- Se dopo i controlli accessGranted è diventata false, stampo "Accesso negato" -->
     <?php } else { ?>
         <div class="alert alert-danger" role="alert">
             Accesso negato
