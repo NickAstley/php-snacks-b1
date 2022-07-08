@@ -85,6 +85,7 @@ $basketballGames = [
     <title>Snack 1</title>
 </head>
 <body>
+    <!-- Stampo con un ciclo for le informazioni per ogni partita -->
     <?php for ($i = 0; $i < count($basketballGames); $i++) { ?>
         <div>
             <?php echo $basketballGames[$i]["homeTeam"] . " - " . $basketballGames[$i]["awayTeam"] . " | " . $basketballGames[$i]["homeTeamScore"] . "-" . $basketballGames[$i]["awayTeamScore"] ?>
